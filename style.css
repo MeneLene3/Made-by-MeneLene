@@ -1,54 +1,80 @@
-body {
+/* Allgemein */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f9fc;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kopfbereich */
+.hero {
+    background: linear-gradient(135deg, #e8f2ff, #f5e9ff);
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, #cde7ff, #e8d8ff);
 }
 
-h1 {
+.hero h1 {
     font-size: 3rem;
+    color: #6d4aff;
 }
 
+.hero p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* Button */
 .button {
     display: inline-block;
-    padding: 12px 25px;
-    margin-top: 20px;
-    background: #6c63ff;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #6d4aff;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
     transition: 0.3s;
 }
 
 .button:hover {
-    background: #5448e5;
+    background: #5840d8;
+    transform: scale(1.05);
+}
+
+/* Galerie */
+#galerie {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#galerie h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 25px;
     flex-wrap: wrap;
-    padding: 50px 20px;
+    gap: 25px;
 }
 
 .card {
     background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 300px;
-    transition: transform 0.3s;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .card img {
@@ -56,8 +82,31 @@ h1 {
     display: block;
 }
 
+.card h3 {
+    padding: 18px;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background: white;
+    margin-top: 50px;
+    color: #666;
+}
+
+/* Handy */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
