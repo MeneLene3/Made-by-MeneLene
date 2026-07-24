@@ -206,3 +206,36 @@ h2{
       radial-gradient(circle at 80% 30%, rgba(173,216,230,.25) 5px, transparent 6px),
       radial-gradient(circle at 60% 80%, rgba(221,160,221,.2) 4px, transparent 5px);
 }
+/* Sterne */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.stars span{
+    position:absolute;
+    color:#c7b7ff;
+    font-size:18px;
+    opacity:0.5;
+    animation:float 8s ease-in-out infinite;
+}
+
+.stars span:nth-child(1){top:8%; left:12%;}
+.stars span:nth-child(2){top:20%; right:15%;}
+.stars span:nth-child(3){top:40%; left:8%;}
+.stars span:nth-child(4){top:55%; right:10%;}
+.stars span:nth-child(5){bottom:18%; left:18%;}
+.stars span:nth-child(6){bottom:10%; right:20%;}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+    50%{
+        transform:translateY(-10px) rotate(10deg);
+    }
+}
