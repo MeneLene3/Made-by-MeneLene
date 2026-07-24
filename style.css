@@ -224,18 +224,9 @@ h2{
     animation:float 8s ease-in-out infinite;
 }
 
-.stars span:nth-child(1){top:8%; left:12%;}
-.stars span:nth-child(2){top:20%; right:15%;}
-.stars span:nth-child(3){top:40%; left:8%;}
-.stars span:nth-child(4){top:55%; right:10%;}
-.stars span:nth-child(5){bottom:18%; left:18%;}
-.stars span:nth-child(6){bottom:10%; right:20%;}
-
-@keyframes float{
-    0%,100%{
-        transform:translateY(0px) rotate(0deg);
-    }
-    50%{
-        transform:translateY(-10px) rotate(10deg);
-    }
-}
+.stars span:nth-child(1){ top:8%; left:8%; }
+.stars span:nth-child(2){ top:15%; left:45%; }
+.stars span:nth-child(3){ top:10%; right:8%; }
+.stars span:nth-child(4){ top:45%; left:12%; }
+.stars span:nth-child(5){ top:55%; right:15%; }
+.stars span:nth-child(6){ bottom:15%; left:50%; }
