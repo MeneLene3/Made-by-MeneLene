@@ -20,8 +20,12 @@ body {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
     color: #6d4aff;
+    letter-spacing: 1px;
+}
 }
 
 .hero p {
