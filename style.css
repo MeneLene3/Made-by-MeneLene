@@ -110,3 +110,48 @@ footer {
         width: 90%;
     }
 }
+/* Navigation */
+
+nav{
+    position: sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#6d4aff;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#6d4aff;
+}
+
+/* Schöner Galerie-Effekt */
+
+.card{
+    border:8px solid white;
+}
+
+.card:hover{
+    transform:translateY(-10px) rotate(-1deg);
+}
