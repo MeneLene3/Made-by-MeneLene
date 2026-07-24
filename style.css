@@ -241,3 +241,65 @@ body{
     radial-gradient(circle at 90% 75%, rgba(176,224,230,.20) 12px, transparent 13px),
     linear-gradient(#fffdfd,#f7f3ff);
 }
+/* ===========================
+   Blumen, Blätter & Sterne
+=========================== */
+
+.hero::before,
+.hero::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    opacity:0.22;
+    background-size:contain;
+    background-repeat:no-repeat;
+    pointer-events:none;
+}
+
+.hero::before{
+    top:-30px;
+    left:-30px;
+    background-image:url("https://cdn-icons-png.flaticon.com/512/7667/7667361.png");
+}
+
+.hero::after{
+    bottom:-30px;
+    right:-30px;
+    transform:rotate(180deg);
+    background-image:url("https://cdn-icons-png.flaticon.com/512/7667/7667361.png");
+}
+
+/* Kleine Sterne */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+}
+
+.stars span{
+    position:absolute;
+    color:#d7b8ff;
+    font-size:18px;
+    animation:twinkle 5s infinite ease-in-out;
+}
+
+.stars span:nth-child(1){top:10%;left:15%;}
+.stars span:nth-child(2){top:18%;right:20%;}
+.stars span:nth-child(3){top:45%;left:8%;}
+.stars span:nth-child(4){top:60%;right:12%;}
+.stars span:nth-child(5){bottom:20%;left:18%;}
+.stars span:nth-child(6){bottom:10%;right:22%;}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:.3;
+        transform:scale(1);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.4);
+    }
+}
