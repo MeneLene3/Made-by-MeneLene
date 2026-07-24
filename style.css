@@ -14,9 +14,12 @@ body {
 
 /* Kopfbereich */
 .hero {
-    background: linear-gradient(135deg, #e8f2ff, #f5e9ff);
+    position: relative;
+    background: linear-gradient(135deg, #fffafc, #f7f1ff);
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    overflow: hidden;
+}
 }
 
 .hero h1 {
