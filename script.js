@@ -1,22 +1,14 @@
-// Favoriten speichern
-const favorites = document.querySelectorAll(".favorite");
+// Sanfte Begrüßung in der Konsole
+console.log("Willkommen auf Made by MeneLene! 🎨");
 
-favorites.forEach(button => {
-    button.addEventListener("click", () => {
-        if (button.textContent === "♡") {
-            button.textContent = "♥";
-        } else {
-            button.textContent = "♡";
-        }
-    });
-});
+// Karten leicht vergrößern beim Anklicken
+const cards = document.querySelectorAll(".card");
 
-
-// Bilder groß anzeigen
-const images = document.querySelectorAll(".gallery img");
-
-images.forEach(image => {
-    image.addEventListener("click", () => {
-        window.open(image.src, "_blank");
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.style.transform = "scale(1.03)";
+        setTimeout(() => {
+            card.style.transform = "";
+        }, 200);
     });
 });
