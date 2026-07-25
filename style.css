@@ -13,30 +13,24 @@ body {
 }
 
 /* Kopfbereich */
-.hero {
-    position: relative;
-    background: linear-gradient(135deg, #fffafc, #f7f1ff);
-    text-align: center;
-    padding: 100px 20px;
-    overflow: hidden;
-}
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,#fffdfd,#f7f2ff);
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
-    font-weight: 700;
-    color: #6d4aff;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-}
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:4.8rem;
+    color:#7b5cff;
+    margin-bottom:15px;
 }
 
-.hero p {
-    margin-top: 15px;
-    font-size: 1.2rem;
+.hero p{
+    font-size:1.2rem;
+    color:#666;
 }
+
 
 /* Button */
 .button {
