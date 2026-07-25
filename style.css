@@ -31,22 +31,20 @@ body {
     color:#666;
 }
 
-
-/* Button */
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 28px;
-    background: #6d4aff;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: 0.3s;
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:linear-gradient(90deg,#c9b6ff,#f5b6d8);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
 }
 
-.button:hover {
-    background: #5840d8;
-    transform: scale(1.05);
+.button:hover{
+    transform:translateY(-3px);
 }
 
 /* Galerie */
