@@ -258,18 +258,22 @@ body{
 }
 
 .hero::before{
-    top:-30px;
-    left:-30px;
-    background-image:url("https://cdn-icons-png.flaticon.com/512/7667/7667361.png");
+    content:"🌷 🌿 ✨";
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-size:32px;
+    opacity:0.5;
 }
 
 .hero::after{
-    bottom:-30px;
-    right:-30px;
-    transform:rotate(180deg);
-    background-image:url("https://cdn-icons-png.flaticon.com/512/7667/7667361.png");
+    content:"✨ 🌿 🌸";
+    position:absolute;
+    bottom:20px;
+    right:30px;
+    font-size:32px;
+    opacity:0.5;
 }
-
 /* Kleine Sterne */
 
 .stars{
