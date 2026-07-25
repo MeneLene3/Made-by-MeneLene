@@ -14,21 +14,11 @@ body {
 
 /* Kopfbereich */
 .hero{
-    text-align:center;
-    padding:120px 20px;
-    background:linear-gradient(135deg,#fffdfd,#f7f2ff);
-}
-
-.hero h1{
-    font-family:'Playfair Display', serif;
-    font-size:4.8rem;
-    color:#7b5cff;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    color:#666;
+    position: relative;
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #fffdfd, #f7f2ff);
+    overflow: hidden;
 }
 
 .button{
