@@ -307,3 +307,41 @@ body{
         transform:scale(1.4);
     }
 }
+/* Dekoration */
+
+.corner-decoration{
+    position: relative;
+}
+
+.flower{
+    position:absolute;
+    font-size:32px;
+    opacity:.7;
+    user-select:none;
+}
+
+.left{
+    top:-80px;
+    left:25px;
+}
+
+.right{
+    top:-80px;
+    right:25px;
+}
+
+/* Sanftes Schweben */
+
+@keyframes floatFlower{
+    0%,100%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.flower{
+    animation:floatFlower 5s ease-in-out infinite;
+}
